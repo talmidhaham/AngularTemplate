@@ -244,4 +244,10 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ],
   },
+  {
+    title: 'Products',
+    icon: 'shopping-cart-outline',
+    link: '/pages/products',
+    home: true,
+  },
 ];

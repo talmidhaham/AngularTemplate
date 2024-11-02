@@ -58,12 +58,15 @@ const routes: Routes = [{
       redirectTo: 'dashboard',
       pathMatch: 'full',
     },
+    { path: 'products', loadChildren: () => import('./products/products.module').then(m => m.ProductsModule) },
     {
       path: '**',
       component: NotFoundComponent,
     },
+
   ],
-}];
+},
+  ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

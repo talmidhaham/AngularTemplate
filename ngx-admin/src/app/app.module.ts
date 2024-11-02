@@ -20,6 +20,7 @@ import {
   NbToastrModule,
   NbWindowModule,
 } from '@nebular/theme';
+import { APP_SETTINGS, AppSettingsValues } from './Config/app-settings';
 
 @NgModule({
   declarations: [AppComponent],
@@ -40,6 +41,7 @@ import {
     CoreModule.forRoot(),
     ThemeModule.forRoot(),
   ],
+  providers:[{ provide: APP_SETTINGS, useValue: AppSettingsValues },],
   bootstrap: [AppComponent],
 })
 export class AppModule {

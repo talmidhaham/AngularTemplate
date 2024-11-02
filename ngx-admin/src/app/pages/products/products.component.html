@@ -1,0 +1,22 @@
+<nb-card>
+    <nb-card-header>Product List</nb-card-header>
+    <nb-card-body>
+      <table nbTable>
+        <thead>
+          <tr>
+            <th nbSortHeader="citizenId">Citizen ID</th>
+            <th nbSortHeader="email">Email</th>
+            <th nbSortHeader="phone">Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products">
+            <td>{{ product.citizenId }}</td>
+            <td>{{ product.email }}</td>
+            <td>{{ product.phone }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </nb-card-body>
+  </nb-card>
+  
